@@ -1,0 +1,113 @@
+.produtos {
+  background: var(--color-cream);
+  padding: 96px 0;
+}
+
+.produtos__eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-sage);
+  margin-bottom: 12px;
+}
+
+.produtos__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+  max-width: 20ch;
+  margin-bottom: 48px;
+}
+
+.produtos__estado {
+  padding: 28px;
+  border-radius: var(--radius-m);
+  background: var(--color-cream-soft);
+  color: var(--color-text-dark);
+  font-size: 0.95rem;
+  max-width: 480px;
+}
+
+.produtos__estado--erro {
+  background: #f4dfd4;
+  color: #7a3a1d;
+}
+
+.produtos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.produto-card {
+  background: #fff;
+  border: 1px solid var(--color-line-dark);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(42, 28, 21, 0.08);
+}
+
+.produto-card__imagem {
+  height: 150px;
+  background: var(--color-cream-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produto-card__imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.produto-card__imagem-fallback {
+  font-size: 2.4rem;
+}
+
+.produto-card__corpo {
+  padding: 20px;
+}
+
+.produto-card__cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.produto-card__cabecalho h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.08rem;
+}
+
+.produto-card__preco {
+  font-weight: 600;
+  color: var(--color-caramel);
+  white-space: nowrap;
+}
+
+.produto-card__corpo p {
+  margin-top: 8px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #5c4a3d;
+}
+
+.produto-card__tag {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-sage);
+  background: rgba(125, 138, 82, 0.12);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
